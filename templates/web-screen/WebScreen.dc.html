@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Web Screen" description="Pantalla web/app de Tercera Pared — header, hero, filtros y feed, compuesta con los componentes del design system." -->
+<helmet><script src="./ds-base.js"></script><style>body{margin:0;background:#111110}a{color:#baf41e}a:hover{color:#8fbf17}</style></helmet>
+<div style="width:1440px;background:#111110;font-family:'Inter',sans-serif;box-sizing:border-box">
+
+<header style="display:flex;align-items:center;justify-content:space-between;padding:20px 48px">
+<img src="../../assets/logo-lockup-dark-bg.png" alt="Tercera Pared" style="height:34px;object-fit:contain">
+<nav style="display:flex;gap:32px">
+<a href="#" style="color:#baf41e;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none">Inicio</a>
+<a href="#" style="color:#c9cab8;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none">Contenido</a>
+<a href="#" style="color:#c9cab8;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none">Torneos</a>
+<a href="#" style="color:#c9cab8;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none">Comunidad</a>
+</nav>
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Button" variant="primary" hint-size="150px,44px">Únete gratis</x-import>
+</header>
+
+<section style="padding:72px 48px 56px;display:flex;flex-direction:column;align-items:flex-start;gap:26px">
+<span style="color:#baf41e;font-family:'Sora',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.12em;text-transform:uppercase">Comunidad de pádel LATAM</span>
+<h1 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:112px;line-height:0.96;color:#f0f1e3;margin:0;text-transform:uppercase">Cultura, progreso<br>y estilo</h1>
+<p style="color:#c9cab8;font-size:18px;line-height:1.5;margin:0;max-width:560px;text-wrap:pretty">Rankings, torneos, grupos de WhatsApp y contenido hecho por alguien que juega.</p>
+<div style="display:flex;gap:16px">
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Button" variant="primary" size="lg" hint-size="240px,56px">Únete a la comunidad</x-import>
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Button" variant="secondary" size="lg" hint-size="180px,56px">Ver contenido</x-import>
+</div>
+</section>
+
+<section style="padding:0 48px 80px;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<h2 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:44px;color:#f0f1e3;text-transform:uppercase;margin:0">Contenido reciente</h2>
+<a href="#" style="font-weight:700;font-size:14px;text-decoration:none">Ver todo →</a>
+</div>
+<div style="display:flex;gap:10px">
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Tag" active="{{ true }}" hint-size="90px,38px">Todos</x-import>
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Tag" hint-size="100px,38px">Progreso</x-import>
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Tag" hint-size="90px,38px">Cultura</x-import>
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Tag" hint-size="90px,38px">Torneos</x-import>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.35)">
+<div style="height:180px;background:linear-gradient(135deg,#18233f,#224652);display:flex;align-items:flex-end;padding:16px"><x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Badge" tone="lime" hint-size="90px,28px">Progreso</x-import></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:8px"><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:19px;color:#f0f1e3;margin:0">5 ejercicios para subir de categoría 4 a 3</h3><span style="font-size:13px;color:#c9cab8">Entrenamiento · 4 min</span></div>
+</div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.35)">
+<div style="height:180px;background:linear-gradient(135deg,#224652,#92bad4);display:flex;align-items:flex-end;padding:16px"><x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Badge" tone="lime" hint-size="80px,28px">Cultura</x-import></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:8px"><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:19px;color:#f0f1e3;margin:0">Por qué el pádel se tomó Quito este año</h3><span style="font-size:13px;color:#c9cab8">Cultura · 6 min</span></div>
+</div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.35)">
+<div style="height:180px;background:linear-gradient(135deg,#1d1d1b,#18233f);display:flex;align-items:flex-end;padding:16px"><x-import component-from-global-scope="TerceraParedDesignSystem_689e62.Badge" tone="lime" hint-size="80px,28px">Torneo</x-import></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:8px"><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:19px;color:#f0f1e3;margin:0">Así se vivió el Open Tercera Pared</h3><span style="font-size:13px;color:#c9cab8">Torneos · 3 min</span></div>
+</div>
+</div>
+</section>
+
+<section style="padding:0 48px 96px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:16px">
+<span style="color:#baf41e;font-family:'Sora',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.12em;text-transform:uppercase">Ecosistema</span>
+<h2 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:56px;color:#f0f1e3;text-transform:uppercase;margin:0;line-height:0.98">Rankings de tu club</h2>
+<p style="color:#c9cab8;font-size:16px;line-height:1.5;margin:0;max-width:440px;text-wrap:pretty">Sigue tu progreso real: puntos, torneos jugados y tu posición frente a la comunidad de tu ciudad.</p>
+<div style="max-width:320px;display:flex;flex-direction:column;gap:8px;margin-top:8px">
+<div style="display:flex;justify-content:space-between;font-size:13px;color:#c9cab8"><span>Tu progreso a categoría 3</span><span style="color:#baf41e;font-weight:700">62%</span></div>
+<x-import component-from-global-scope="TerceraParedDesignSystem_689e62.ProgressBar" value="{{ 62 }}" hint-size="100%,8px"></x-import>
+</div>
+</div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;padding:8px;box-shadow:0 8px 24px rgba(0,0,0,0.35)">
+<div style="display:flex;align-items:center;gap:16px;padding:16px;border-bottom:1px solid rgba(240,241,227,0.14)"><span style="font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;color:#baf41e;min-width:32px">1</span><div style="flex:1"><div style="color:#f0f1e3;font-weight:600;font-size:15px">Andrés Salazar</div><div style="color:#c9cab8;font-size:13px">Padel Club Cumbayá</div></div><span style="color:#92bad4;font-weight:700;font-size:14px">1,240 pts</span></div>
+<div style="display:flex;align-items:center;gap:16px;padding:16px;border-bottom:1px solid rgba(240,241,227,0.14)"><span style="font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;color:#c9cab8;min-width:32px">2</span><div style="flex:1"><div style="color:#f0f1e3;font-weight:600;font-size:15px">María José Ruiz</div><div style="color:#c9cab8;font-size:13px">La Carolina Padel</div></div><span style="color:#92bad4;font-weight:700;font-size:14px">1,180 pts</span></div>
+<div style="display:flex;align-items:center;gap:16px;padding:16px"><span style="font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;color:#c9cab8;min-width:32px">3</span><div style="flex:1"><div style="color:#f0f1e3;font-weight:600;font-size:15px">Diego Fuentes</div><div style="color:#c9cab8;font-size:13px">Padel Club Cumbayá</div></div><span style="color:#92bad4;font-weight:700;font-size:14px">1,095 pts</span></div>
+</div>
+</section>
+
+<footer style="padding:40px 48px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(240,241,227,0.14)">
+<img src="../../assets/logo-lockup-dark-bg.png" alt="Tercera Pared" style="height:24px;object-fit:contain">
+<span style="color:#c9cab8;font-size:13px">© 2026 Tercera Pared · Quito, Ecuador</span>
+</footer>
+</div>
+
+</x-dc>
+</body>
+</html>

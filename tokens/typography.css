@@ -1,0 +1,25 @@
+:root{
+--font-display:"Bebas Neue",Impact,sans-serif;
+--font-heavy:"Archivo Black","Made Outer Sans",sans-serif;
+--font-accent:"Baloo 2","Coolvetica",cursive;
+--font-secondary:"Sora",sans-serif;
+--font-body:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+--text-display-xl:clamp(56px,9vw,132px);
+--text-display-lg:clamp(40px,6vw,84px);
+--text-display-md:56px;
+--text-display-sm:36px;
+--text-heading-lg:28px;
+--text-heading-md:22px;
+--text-body-lg:18px;
+--text-body-md:16px;
+--text-body-sm:14px;
+--text-label:13px;
+
+--lh-tight:0.98;/* @kind other */
+--lh-snug:1.15;/* @kind other */
+--lh-normal:1.5;/* @kind other */
+--tracking-tight:-0.01em;
+--tracking-wide:0.06em;
+--tracking-wider:0.12em;
+}

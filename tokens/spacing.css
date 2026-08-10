@@ -1,0 +1,24 @@
+:root{
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:24px;
+--space-6:32px;
+--space-7:48px;
+--space-8:64px;
+--space-9:96px;
+--space-10:128px;
+
+--radius-sm:4px;
+--radius-md:10px;
+--radius-lg:18px;
+--radius-pill:999px;
+
+--shadow-card:0 8px 24px rgba(0,0,0,0.35);
+--shadow-pop:0 16px 40px rgba(0,0,0,0.5);
+
+--ease-standard:cubic-bezier(.4,0,.2,1);/* @kind other */
+--duration-fast:120ms;/* @kind other */
+--duration-normal:220ms;/* @kind other */
+}

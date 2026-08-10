@@ -1,0 +1,25 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Core: Button, Badge, Card, Tag" --><link rel="stylesheet" href="../../styles.css"><script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script><script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script><script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script><script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--near-black);padding:20px;font-family:var(--font-body)}</style>
+<div id="root"></div>
+<script type="text/babel">
+const { Button, Badge, Card, Tag } = window.TerceraParedDesignSystem_689e62;
+function Demo(){
+  return <div style={{display:"flex",flexDirection:"column",gap:16}}>
+    <div style={{display:"flex",gap:12,flexWrap:"wrap"}}>
+      <Button variant="primary">Únete</Button>
+      <Button variant="secondary">Ver más</Button>
+      <Button variant="ghost">Cancelar</Button>
+      <Button variant="inverse">Reservar</Button>
+      <Button variant="primary" disabled>Agotado</Button>
+    </div>
+    <div style={{display:"flex",gap:8,flexWrap:"wrap"}}>
+      <Badge tone="lime">Torneo</Badge><Badge tone="sky">Nivel 4</Badge><Badge tone="outline">Quito</Badge><Badge tone="dark">Nuevo</Badge>
+      <Tag active>Todos</Tag><Tag>Femenino</Tag><Tag>Mixto</Tag>
+    </div>
+    <Card padding="16px" style={{display:"flex",gap:12,alignItems:"center"}}>
+      <Badge tone="lime">C4</Badge><span style={{color:"var(--cream)",fontFamily:"var(--font-body)"}}>Card de contenido, borde sutil + sombra</span>
+    </Card>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Deck" description="Deck 16:9 de Tercera Pared — portada, sección, contenido con tarjetas, dato grande y cierre." -->
+<helmet><script src="./ds-base.js"></script><style>body{margin:0;background:#2a2a28}</style></helmet>
+<div style="display:flex;flex-direction:column;gap:24px;align-items:center;padding:24px;font-family:'Inter',sans-serif">
+
+<section data-screen-label="01" style="width:1280px;height:720px;background:#111110;display:flex;flex-direction:column;justify-content:space-between;padding:80px;box-sizing:border-box;flex:none">
+<img src="../../assets/logo-lockup-dark-bg.png" alt="Tercera Pared" style="height:44px;object-fit:contain;align-self:flex-start">
+<div style="display:flex;flex-direction:column;gap:24px">
+<span style="color:#baf41e;font-family:'Sora',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.12em;text-transform:uppercase">Comunidad de pádel LATAM</span>
+<h1 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:124px;line-height:0.94;color:#f0f1e3;margin:0;text-transform:uppercase">Cultura, progreso<br>y estilo</h1>
+</div>
+<span style="color:#c9cab8;font-size:17px">Quito, Ecuador · 2026</span>
+</section>
+
+<section data-screen-label="02" style="width:1280px;height:720px;background:#f0f1e3;display:flex;align-items:center;padding:80px;box-sizing:border-box;flex:none">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="color:#224652;font-family:'Sora',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.12em;text-transform:uppercase">Sección 01</span>
+<h2 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:104px;line-height:0.94;color:#111110;margin:0;text-transform:uppercase">El ecosistema</h2>
+<p style="color:#3a3a35;font-size:22px;line-height:1.5;margin:0;max-width:620px;text-wrap:pretty">Clubes, torneos y grupos: la infraestructura real donde vive el pádel amateur de la región.</p>
+</div>
+</section>
+
+<section data-screen-label="03" style="width:1280px;height:720px;background:#111110;display:flex;flex-direction:column;gap:44px;padding:80px;box-sizing:border-box;flex:none">
+<h2 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:76px;line-height:0.98;color:#f0f1e3;margin:0;text-transform:uppercase">Los cinco pilares</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.35)"><span style="font-family:'Archivo Black',sans-serif;color:#baf41e;font-size:34px">01</span><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:24px;color:#f0f1e3;margin:0">Cultura</h3><p style="color:#c9cab8;font-size:16px;line-height:1.5;margin:0">El pádel como fenómeno social, no solo deporte.</p></div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.35)"><span style="font-family:'Archivo Black',sans-serif;color:#baf41e;font-size:34px">02</span><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:24px;color:#f0f1e3;margin:0">Progreso</h3><p style="color:#c9cab8;font-size:16px;line-height:1.5;margin:0">Mejora real y medible del jugador amateur.</p></div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.35)"><span style="font-family:'Archivo Black',sans-serif;color:#baf41e;font-size:34px">03</span><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:24px;color:#f0f1e3;margin:0">Ecosistema</h3><p style="color:#c9cab8;font-size:16px;line-height:1.5;margin:0">Clubes, torneos, grupos, la infraestructura.</p></div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.35)"><span style="font-family:'Archivo Black',sans-serif;color:#baf41e;font-size:34px">04</span><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:24px;color:#f0f1e3;margin:0">Comunidad</h3><p style="color:#c9cab8;font-size:16px;line-height:1.5;margin:0">El jugador real, no el profesional lejano.</p></div>
+<div style="background:#181816;border:1px solid rgba(240,241,227,0.14);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.35)"><span style="font-family:'Archivo Black',sans-serif;color:#baf41e;font-size:34px">05</span><h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:24px;color:#f0f1e3;margin:0">Estilo</h3><p style="color:#c9cab8;font-size:16px;line-height:1.5;margin:0">Estética y actitud: cómo se ve y se siente.</p></div>
+<div style="background:#baf41e;border-radius:18px;padding:32px;display:flex;align-items:flex-end"><p style="font-family:'Bebas Neue',Impact,sans-serif;font-size:44px;line-height:0.98;color:#111110;margin:0;text-transform:uppercase">Dentro y fuera de la cancha</p></div>
+</div>
+</section>
+
+<section data-screen-label="04" style="width:1280px;height:720px;background:#18233f;display:flex;flex-direction:column;justify-content:center;gap:28px;padding:80px;box-sizing:border-box;flex:none">
+<span style="color:#92bad4;font-family:'Sora',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.12em;text-transform:uppercase">El dato</span>
+<span style="font-family:'Archivo Black',sans-serif;font-size:180px;line-height:0.9;color:#baf41e">+240%</span>
+<p style="color:#f0f1e3;font-size:26px;line-height:1.45;margin:0;max-width:720px;text-wrap:pretty">Crecimiento de canchas de pádel en Quito en los últimos tres años. La comunidad que lo sostiene todavía no existe.</p>
+</section>
+
+<section data-screen-label="05" style="width:1280px;height:720px;background:#111110;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px;padding:80px;box-sizing:border-box;flex:none">
+<h2 style="font-family:'Bebas Neue',Impact,sans-serif;font-size:96px;line-height:0.96;color:#f0f1e3;margin:0;text-transform:uppercase;text-align:center">Únete a la<br>tercera pared</h2>
+<span style="background:#baf41e;color:#111110;font-weight:700;font-size:18px;padding:18px 40px;border-radius:999px">terceraparedpadel.com</span>
+</section>
+
+</div>
+
+</x-dc>
+</body>
+</html>
